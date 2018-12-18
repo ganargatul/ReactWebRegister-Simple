@@ -40,15 +40,16 @@
   height: 10vh;
 }
 .form{
-  height: 400px;
+  height: 950px;
   background-color: white;
-  width: 400px;
-  margin-left: 500px;
+  width: 800px;
+  margin-left: 270px;
 
 }
 .grey{
   background-color: #E9E9F1;
-  }
+  height: 955px;
+}
 .text{
     margin-left: 10px;
     padding-top: 0;
@@ -80,4 +81,13 @@ nav ul li a{
 }
 nav ul li a:hover{
   color: #55a8fd;
+}
+.register-font{
+  margin-left: 300px
+}
+.colom{
+  margin-left: 50px
+}
+.footer{
+  background-color: #E9E9F1
 }
