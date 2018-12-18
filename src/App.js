@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { ReCaptcha } from 'react-recaptcha-google'
+import about from './about';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 class App extends Component {
   constructor(props){
     super(props)
@@ -16,7 +18,7 @@ class App extends Component {
   registerhandle(){
     if(this.state.isverified){
       
-      alert('Registered Succsessfull');
+     // alert('Registered Succsessfull');
     }else{
       alert('Please Proof You Are Human')
     }
@@ -41,6 +43,7 @@ class App extends Component {
       })
     }
   }
+  
   render() {
     return (
       <div className="App">
@@ -52,14 +55,21 @@ class App extends Component {
              <img src={logo} className="inilogo"></img>
            </td>
            <td>
+           <Router>
               <nav>
                 <ul>
-                  <li><a href="#">Home</a></li>
+                  <li>
+                   
+                  </li>
                   <li><a href="#">Profile</a></li>
                   <li><a href="#">About</a></li>
                 </ul>
+                <Route exact path="/" component={App} />
+                
               </nav>
+              </Router>
            </td>
+           
          </tr>
        </table>
        </header>
